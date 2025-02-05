@@ -19,7 +19,7 @@ const app = new Hono();
 app.use(
   '/*',
   cors({
-    origin: ['http://localhost:5173', 'https://repomix.com', 'https://api.repomix.com'],
+    origin: ['http://localhost:5173', 'https://repomix.bellon.dev'],
     allowMethods: ['GET', 'POST', 'OPTIONS'],
     allowHeaders: ['Content-Type'],
     maxAge: 86400,
