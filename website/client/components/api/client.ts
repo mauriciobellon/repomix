@@ -45,7 +45,7 @@ export class ApiError extends Error {
   }
 }
 
-const API_BASE_URL = import.meta.env.PROD ? 'https://api.repomix.com' : 'http://localhost:8080';
+const API_BASE_URL = import.meta.env.PROD ? 'https://repomix-server.bellon.dev' : 'https://repomix-server.bellon.dev';
 
 export async function packRepository(request: PackRequest): Promise<PackResult> {
   const response = await fetch(`${API_BASE_URL}/api/pack`, {
