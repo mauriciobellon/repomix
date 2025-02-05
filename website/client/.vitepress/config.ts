@@ -17,4 +17,9 @@ export default defineConfig({
     'pt-br': { label: 'Português', ...configPtBr },
     ko: { label: '한국어', ...configKo },
   },
+  vite: {
+    server: {
+      allowedHosts: ['repomix.bellon.dev']
+    }
+  }
 });
